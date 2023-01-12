@@ -67,7 +67,7 @@ header {
     left: auto;
     right: 0;
     top: 0;
-    background-image: url(../image/bg.webp);
+    background-image: url(/image/bg.webp);
     background-color:rgba(255,255,255,0.8);
     background-blend-mode:lighten;
     filter: brightness(.95);

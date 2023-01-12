@@ -161,7 +161,7 @@ section {position: relative;}
 	width: 100vw;
 	height: 100vh;
 	/*background-image: url('../image/bg.webp');*/
-	background-image: url(image/bg.webp);
+	background-image: url(/image/bg.webp);
 	background-size: cover;
 	opacity: .275;
 }
@@ -175,7 +175,7 @@ section {position: relative;}
 	justify-content: center;
     padding-bottom: 0;
 	background-image: url('../image/sui_2023.jpg');
-	background-image: url(image/sui_2023.jpg);
+	background-image: url(/image/sui_2023.jpg);
 	background-size: cover;
 }
 
@@ -188,7 +188,7 @@ section {position: relative;}
 	padding: 8rem 0 2.5rem;
 	padding-left: var(--padding);
 	background-image: url('../image/essence.jpg');
-	background-image: url(image/essence.jpg);
+	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
 
