@@ -1,4 +1,6 @@
 header .Symbol path {fill: var(--textColor);}
+header.show,header.up {opacity: 1 !important;}
+header.top, header.show.top {opacity: 0 !important;}
 
 .exhibitions .swiper-slide .info {opacity: 0; transition: 1.5s ease-in-out;}
 .exhibitions .swiper-slide-active .info {opacity: 1; transition: 3.0s 1.0s ease-in-out;}
