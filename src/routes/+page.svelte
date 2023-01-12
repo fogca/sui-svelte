@@ -8,6 +8,8 @@
 	import Artpiece from '../components/Artpiece.svelte';
 	import Sign from '../components/Sign.svelte';
 
+	const src = 'https://highline.huffingtonpost.com/articles/en/poor-millennials/media/images/sprites/becky.png';
+	$: vars = `--background-image: url(${src});`;
 </script>
 
 <svelte:head>
@@ -162,6 +164,7 @@ section {position: relative;}
 	width: 100vw;
 	height: 100vh;
 	background-image: url('../image/bg.webp');
+	background-image: url(/image/bg.webp);
 	background-size: cover;
 	opacity: .275;
 }
