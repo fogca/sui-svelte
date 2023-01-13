@@ -10,7 +10,6 @@ import Logo from './Logo.svelte'
 <style>
     footer {
         width: 100vw;
-        padding: 0 5vw 5rem;
         background-color: var(--darkColor);
     }
 </style>

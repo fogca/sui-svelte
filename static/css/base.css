@@ -78,7 +78,7 @@ img {
 .uppercase {text-transform: uppercase;}
 
 .semitrans {opacity: .7;}
-.white, .white * {color: white;}
+.white, .white * {color: white;fill: white;}
 .gray {color: var(--subColor);}
 ul li {text-decoration: none;list-style: none;}
 .flex {display: flex; justify-content: center; align-items: center;}

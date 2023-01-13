@@ -36,7 +36,7 @@
         <div class="swiper-slide">
             <img src={ item.img } alt="">
             <div class="info">
-              <h3 class="h4" lang="en">{ item.title }</h3>
+              <h3 class="h5" lang="en">{ item.title }</h3>
               <h4 class="h6" lang="en">{ item.info }</h4>
             </div>
         </div>

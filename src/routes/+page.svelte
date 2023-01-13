@@ -50,16 +50,19 @@ onMount(() => {
 	  stagger: .15,
       ease: 'power2.inOut',
     }, "op")
+	/*
 	tl.to('#index-top', {
       duration: 3,
       height: "45vh",
       ease: 'power2.inOut',
     }, "op+=5.5")
+	
 	tl.from('#index-first', {
       duration: 4,
       opacity: 0,
       ease: 'power3.inOut',
     }, "op+=7.5")
+	*/
 });
 </script>
 
@@ -149,6 +152,7 @@ onMount(() => {
 		<Hyphen />
 		<h1 class="h4" lang="en">about</h1>
 	  </div>
+	  <div class="logo"><Logo /></div>
 	  <p>
 	  2012年創立<br>
 	  日本発のナチュラルフレグランスブランド。<br><br>
@@ -167,23 +171,31 @@ onMount(() => {
 	  だからこそ生まれる、人々との共鳴を<br>喜びとし、
 	  おひとりおひとりに<br>届けられたらと願っています。
 	  </p>
-	  <Sign />
+	  <div class="sign"><Sign /></div>
+	  
 	  
 	</section>
 
 
-	<section id="index-sixth">
-	  <img data-src="assets/image/kv.webp" alt="" class="lazyload">
+	<section id="index-sixth" class="white">
 	  <div class="section-head">
-		<span class="h5" lang="en">06.</span>
-		<h1 class="h2" lang="en">contact</h1>
-		<h2 class="h5">蒸留・調香に関するご相談・ご質問は<br>
-		  以下メールアドレスよりお問い合わせください。<br>
-		  またオーダー・パーソナルフレグランスも<br>
-		  承っておりますので、是非ご相談ください。</h2>
+		<span class="h4" lang="en">06.</span>
+		<Hyphen />
+		<h1 class="h4" lang="en">contact</h1>
 	  </div>
+	  <h2 class="p">蒸留・調香に関するご相談・ご質問は<br>
+		以下メールアドレスよりお問い合わせください。<br>
+		またオーダー・パーソナルフレグランスも<br>
+		承っておりますので、是非ご相談ください。</h2>
 	  <div class="mail">
-		<a href="" class="h4" lang="en">info@kahoritotomoni.com</a>
+		<a href="/" class="h5" lang="en">info@kahoritotomoni.com</a>
+	  </div>
+	  <div class="links">
+		  <ul>
+			  <li><a href="/" class="h5" lang="en">projects</a></li>
+			  <li><a href="/" class="h5" lang="en">information</a></li>
+			  <li><a href="/" class="h5" lang="en">instagram</a></li>
+		  </ul>
 	  </div>
 	</section>
 	
@@ -229,7 +241,7 @@ section {position: relative;}
 	justify-content: center;
     padding-bottom: 0;
 	background-image: url('../image/sui_2023.jpg');
-	background-image: url(/image/sui_2023.jpg);
+	background-image: url(/image/top.jpg);
 	background-size: cover;
 }
 
@@ -241,16 +253,17 @@ section {position: relative;}
 	width: 100vw;
 	margin-top: 4rem;
 	margin-left: calc(-1 * var(--padding));
-	padding: 8rem 0 2.5rem;
+	padding: 10rem 0 4rem;
 	padding-left: var(--padding);
 	background-image: url('../image/essence.jpg');
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
-
+#index-second .container {margin-bottom: 4.5rem;}
 #index-second .container h3 {
 	opacity: .5;
 	margin-top: -.25rem;
+	margin-bottom: .5rem;
 }
 
 #index-third .section-head, #index-fourth .section-head {margin-bottom: 1.5rem;}
@@ -263,33 +276,45 @@ section {position: relative;}
 #index-fourth p {font-size: 1.1rem;}
 #index-fourth .exhibitions {margin-top: 3rem;}
 
+#index-fifth {margin: 10rem 0 0;}
+#index-fifth .logo {width: 16.5rem;margin: 4rem 0;}
+#index-fifth .sign {margin-top: 3rem;}
 
 
-
+#index-sixth {
+	width: 100vw;
+	margin-top: 8rem;
+	padding: 10rem var(--padding) 5rem;
+	background-image: url('../image/sui_2023.jpg');
+	background-image: url(/image/kv.webp);
+	background-size: cover;
+}
+#index-sixth h2 {
+	font-size: 1.15rem;
+	margin-top: 6rem;}
+#index-sixth .mail {margin: 4rem 0 10rem;}
+#index-sixth .mail a {border-bottom: solid 0.5px var(--backgroundColor);}
+#index-sixth .links ul li {margin-bottom: 1rem;}
 
 
 
 
 
  
-  #index-second .container {margin-bottom: 5.6rem;}
+  
   #index-second .container h2 {margin-left: -.23rem;}
   #index-second .container p {margin-left: -.05rem;}
-  #index-second .container h3 {margin-bottom: 1.2rem;}
 
 
 
-#index-fifth {margin: 10rem 0 10rem;}
 
-#index-fifth svg {margin-top: 4rem;}
+
 
 #index-sixth img {
     width: calc(100% + 6.5vw);
     aspect-ratio: 2/1;
 }
-#index-sixth .section-head {margin-top: 5rem;}
-#index-sixth .mail {margin-top: 6rem;}
-#index-sixth .mail a {border-bottom: solid 0.5px var(--textColor);}
+
 
 	
 </style>

@@ -19,12 +19,12 @@
             let winHeight = window.innerHeight;
             //let set_position = 0;
             window.addEventListener("scroll", () => {
-                if ( currentY < winHeight * .5 ) {/* 50vh以下 */
+                if ( currentY < winHeight * .25 ) {/* 50vh以下 */
                     header[0].classList.add('top');
-                } else if ( currentY > winHeight * .5 && currentY < winHeight * 1.5 ) {/* 50vh以上 && 150vh以下*/
+                } else if ( currentY > winHeight * .25 && currentY < winHeight * 1.25 ) {/* 50vh以上 && 150vh以下*/
                     header[0].classList.add('show');
                     header[0].classList.remove('top');
-                } else if (currentY > winHeight * 1.5 ) {/* 150vh以上 */
+                } else if (currentY > winHeight * 1.25 ) {/* 150vh以上 */
                     header[0].classList.remove('show');
                 };
 
@@ -81,7 +81,7 @@ header {
 }
 header.show {opacity: 1;}
 
-header .top {width: 72.5%;}
+header .top {width: 100%;}
 header .top ul {margin-top: 4rem;}
 header .top ul li {
     margin-left: -2.5px;
