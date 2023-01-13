@@ -253,28 +253,47 @@ section {position: relative;}
 	width: 100vw;
 	margin-top: 4rem;
 	margin-left: calc(-1 * var(--padding));
-	padding: 10rem 0 4rem;
+	padding: 12rem 0 11rem;
 	padding-left: var(--padding);
 	background-image: url('../image/essence.jpg');
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
 #index-second .container {margin-bottom: 4.5rem;}
+#index-second .container:nth-of-type(3) {margin-bottom: 0;}
+#index-second .container h2 {
+	font-size: 1.7rem;
+	margin-left: -0.5px;
+}
 #index-second .container h3 {
 	opacity: .5;
 	margin-top: -.25rem;
-	margin-bottom: .5rem;
+	margin-bottom: 1.0rem;
 }
+#index-second .container p {
+	line-height: 2;
+	margin-left: -.5px;
+	opacity: .9;
+}
+
+
+
+
 
 #index-third .section-head, #index-fourth .section-head {margin-bottom: 1.5rem;}
 
 #index-third .exhibitions {
 	width: calc(100vw - var(--padding));
+	width: 100%;
 	margin-top: 3rem;
 }
 
 #index-fourth p {font-size: 1.1rem;}
-#index-fourth .exhibitions {margin-top: 3rem;}
+#index-fourth .exhibitions {
+	margin-top: 3rem;
+	width: 100vw;
+    margin-left: calc(-1 * var(--padding));
+}
 
 #index-fifth {margin: 10rem 0 0;}
 #index-fifth .logo {width: 16.5rem;margin: 4rem 0;}
@@ -302,8 +321,8 @@ section {position: relative;}
 
  
   
-  #index-second .container h2 {margin-left: -.23rem;}
-  #index-second .container p {margin-left: -.05rem;}
+  
+  
 
 
 

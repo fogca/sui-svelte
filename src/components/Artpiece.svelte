@@ -49,8 +49,10 @@
 
 .swiper-slide img {
     width: 100%;
-    height: 80vw;
+    height: 100vw;
 }
+
+.info {margin-left: var(--padding);}
 
 .swiper-slide h3 {
   font-size: 1.1rem;

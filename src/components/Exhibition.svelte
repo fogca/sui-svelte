@@ -53,7 +53,7 @@
 .swiper-slide img {
     width: 100vw;
     width: 100%;
-    height: 90vw;
+    height: 80vw;
 }
 .exhibitions .swiper-slide .info h3 {margin: .5rem 0 .25rem; opacity: .75;}
 .exhibitions .swiper-slide .info h4 {opacity: .25;}

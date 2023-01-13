@@ -47,14 +47,15 @@
 <header>
     <div class="top">
         <LogoA />
+    </div>
+
+    <div class="bottom">
         <ul>
             <li><a href="/">プロジェクト</a></li>
             <li><a href="/">展示のお知らせ</a></li>
             <li><a href="/">お問い合わせ</a></li>
         </ul>
     </div>
-
-    <div class="bottom"></div>
 </header>
 
 <style>
@@ -68,31 +69,30 @@ header {
     right: 0;
     top: 0;
     background-image: url(/image/bg.webp);
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(250,250,250,0.7);
     background-blend-mode:lighten;
-    filter: brightness(.95);
+    filter: brightness(.98);
     z-index: 9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 4rem;
     transition: .5s ease;
 }
 header.show {opacity: 1;}
 
 header .top {width: 100%;}
-header .top ul {margin-top: 4rem;}
-header .top ul li {
-    margin-left: -2.5px;
-    margin-bottom: 1.5rem;
+header .bottom ul li {
+    margin-left: -3.0px;
+    margin-top: 1.5rem;
     text-align: center;
 }
-header .top ul li a {
+header .bottom ul li a {
     writing-mode: vertical-rl;
     vertical-align: center;
     font-feature-settings: initial;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 
