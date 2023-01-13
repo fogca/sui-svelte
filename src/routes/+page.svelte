@@ -153,24 +153,32 @@ onMount(() => {
 		<h1 class="h4" lang="en">about</h1>
 	  </div>
 	  <div class="logo"><Logo /></div>
+	  
+	  <div class="paragraph">
 	  <p>
-	  2012年創立<br>
-	  日本発のナチュラルフレグランスブランド。<br><br>
+		2012年創立<br>
+		日本発のナチュラルフレグランスブランド。</p>
 
-	  幼少期から音楽を続けていた調香師が、<br>
-	  植物の香りと出逢い、情景や記憶との<br>結びつきを体感。<br><br>
+	  <p>
+		幼少期から音楽を続けていた調香師が、<br>
+		植物の香りと出逢い、情景や記憶との<br>
+		結びつきを体感。</p>
 
-	  自然に内在する”響き”を奏でるような、<br>
-	  抽出、調香の実験をはじめました。<br><br>
+	  <p>
+		自然に内在する”響き”を奏でるような、<br>
+	  	抽出、調香の実験をはじめました。</p>
+	  <p>
+	  	日本の豊かな素材と香文化、<br>西洋の歴史ある香水文化。<br>
+	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。</p>
 
-	  日本の豊かな素材と香文化、<br>西洋の歴史ある香水文化。<br>
-	  それぞれの魅力を織り交ぜた<br>作品を特徴としています。<br><br>
+	  <p>
+	  風のように偶然性と余白のある、かほり。</p>
 
-	  風のように偶然性と余白のある、かほり。<br><br>
-
+	  <p>
 	  だからこそ生まれる、人々との共鳴を<br>喜びとし、
-	  おひとりおひとりに<br>届けられたらと願っています。
-	  </p>
+	  おひとりおひとりに<br>届けられたらと願っています。</p>
+	
+	</div>
 	  <div class="sign"><Sign /></div>
 	  
 	  
@@ -278,8 +286,6 @@ section {position: relative;}
 
 
 
-
-
 #index-third .section-head, #index-fourth .section-head {margin-bottom: 1.5rem;}
 
 #index-third .exhibitions {
@@ -288,6 +294,8 @@ section {position: relative;}
 	margin-top: 3rem;
 }
 
+
+
 #index-fourth p {font-size: 1.1rem;}
 #index-fourth .exhibitions {
 	margin-top: 3rem;
@@ -295,14 +303,20 @@ section {position: relative;}
     margin-left: calc(-1 * var(--padding));
 }
 
+
+
 #index-fifth {margin: 10rem 0 0;}
 #index-fifth .logo {width: 16.5rem;margin: 4rem 0;}
-#index-fifth .sign {margin-top: 3rem;}
+#index-fifth .paragraph p {
+	line-height: 2.8;
+	margin-bottom: 1.6rem;
+}
+#index-fifth .sign {margin-top: 5rem;}
 
 
 #index-sixth {
 	width: 100vw;
-	margin-top: 8rem;
+	margin-top: 15rem;
 	padding: 10rem var(--padding) 5rem;
 	background-image: url('../image/sui_2023.jpg');
 	background-image: url(/image/kv.webp);
