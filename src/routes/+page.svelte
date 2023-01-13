@@ -1,12 +1,66 @@
 <script>
-	import Saos from "saos";
-	import { Swiper, SwiperSlide } from 'swiper/svelte';
-	import 'swiper/css';
+	//import Saos from "saos";
+	//import { Swiper, SwiperSlide } from 'swiper/svelte';
+	//import 'swiper/css';
 	import Logo from '../components/Logo@.svelte';
 	import Hyphen from '../components/Hyphen.svelte';
 	import Exhibition from '../components/Exhibition.svelte';
 	import Artpiece from '../components/Artpiece.svelte';
 	import Sign from '../components/Sign.svelte';
+	import { onMount } from "svelte";
+	import { browser } from "$app/environment";
+	import { gsap } from "gsap/dist/gsap";
+
+
+onMount(() => {
+	
+	let index = document.getElementsByClassName('Index');
+  	if (browser) {
+    	//index[0].style.visibility = "visible";
+  	}
+	const tl = gsap.timeline();
+	tl.from('#index-top .symbol .logo path', {
+      duration: 1,
+	  opacity: 0,
+	  stagger: .15,
+      ease: 'power2.inOut',
+    }, "op")
+	tl.from('#index-top .symbol .typography path', {
+      duration: 2,
+	  opacity: 0,
+	  stagger: .0,
+      ease: 'power2.inOut',
+    }, "op+=1.5")
+	tl.from('#index-top .symbol .object path', {
+      duration: 3,
+	  opacity: 0,
+	  rotate: "3deg",
+	  stagger: .15,
+      ease: 'power4.inOut',
+    }, "op+=2.2")
+	tl.from('#index-top .symbol .texts path', {
+      duration: 3.5,
+	  opacity: 0,
+	  stagger: .025,
+      ease: 'power2.inOut',
+    }, "op+=4.2")
+	tl.from('#index-top .symbol', {
+      duration: 3,
+      filter: "blur(5px)",
+	  stagger: .15,
+      ease: 'power2.inOut',
+    }, "op")
+	tl.to('#index-top', {
+      duration: 3,
+      height: "45vh",
+      ease: 'power2.inOut',
+    }, "op+=5.5")
+	tl.from('#index-first', {
+      duration: 4,
+      opacity: 0,
+      ease: 'power3.inOut',
+    }, "op+=7.5")
+});
 </script>
 
 <svelte:head>
@@ -28,7 +82,7 @@
 	  </div>
 	  <div class="wrapper">
 		<h2 class="h2">心を澄まして<br>聞くかほり</h2>
-		<p class="h5">素材との出会い、抽出、調香まで<br>
+		<p>素材との出会い、抽出、調香まで<br>
 			小さないのちに内在する響きから<br>
 			季節や風土のめぐりに触れる香りづくり
 		</p>
@@ -178,6 +232,8 @@ section {position: relative;}
 	background-image: url(/image/sui_2023.jpg);
 	background-size: cover;
 }
+
+#index-top .symbol {width: 14rem;}
 
 #index-first .wrapper p {margin-top: 1.5rem;}
 
