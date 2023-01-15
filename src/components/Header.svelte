@@ -68,19 +68,21 @@
                 <path id="Path_1130" data-name="Path 1130" d="M69.469,768.159c.53,4.437.283,7.323-2.094,11.323a20.988,20.988,0,0,1-8.335,7.5,13.8,13.8,0,0,1-4.989,1.512,22.528,22.528,0,0,1-5.164,8.579l-.338.35-.4-.286a9.155,9.155,0,0,0-4.626-1.706,13.73,13.73,0,0,0-6.837,1.62,16.658,16.658,0,0,0-6.059,5.554,21.952,21.952,0,0,0-2.575,4.836l-.219.586-.361.025a10.343,10.343,0,0,1-7.255-2.115,19.463,19.463,0,0,1-4.52,3.626,14,14,0,0,1-5.145,1.642,10.733,10.733,0,0,1-5.21-.932C2.3,808.939,1.016,806.594,0,802.94l.13-.99a10.358,10.358,0,0,0,5.666,7,10.845,10.845,0,0,0,9.384-.68,17.346,17.346,0,0,0,4.586-3.491l.371-.389.407.35a10.5,10.5,0,0,0,6.853,2.686c.691-1.786,1.628-3.682,2.442-5.372a12.188,12.188,0,0,1,5.613-6.047c3.374-1.937,6.2-1.621,8.5-1.423a9.926,9.926,0,0,1,4.506,2.006,24.1,24.1,0,0,0,4.636-8.8l.117-.371.385-.025a12.518,12.518,0,0,0,4.931-1.42c6.673-3.433,11.184-12.089,10.274-19.7Z" fill="#333117"/>
               </g>
             </g>
-          </svg>
-          
-    </div>
-    <div class="top">
-        <LogoVert />
+        </svg>  
     </div>
 
-    <div class="bottom">
-        <ul>
-            <li><a href="/">プロジェクト</a></li>
-            <li><a href="/">展示のお知らせ</a></li>
-            <li><a href="/">お問い合わせ</a></li>
-        </ul>
+    <div class="flex-header">
+        <div class="top">
+            <LogoVert />
+        </div>
+
+        <div class="bottom">
+            <ul>
+                <li><a href="/">プロジェクト</a></li>
+                <li><a href="/">展示のお知らせ</a></li>
+                <li><a href="/">お問い合わせ</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -99,31 +101,32 @@ header {
     background-blend-mode:lighten;
     filter: brightness(.98);
     z-index: 9;
+    padding: 3rem 0 4rem;
+    transition: .5s ease;
+}
+.flex-header {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0 4rem;
-    transition: .5s ease;
 }
 header.show {opacity: 1;}
 
 header .top {
     width: 100%;
     text-align: center;
-    opacity: .9;
+    opacity: .8;
 }
+header .bottom {width: 100%;}
 header .bottom ul li {
-    margin-left: -3.0px;
     margin-top: 1.5rem;
     text-align: center;
 }
 header .bottom ul li a {
     writing-mode: vertical-rl;
     margin-left: -0.5px;
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
     font-feature-settings: initial;
     font-size: 1.05rem;
 }
@@ -132,7 +135,8 @@ header .pattern {
     position: absolute;
     top: -3rem;
     width: 100%;
-    opacity: .05;
+    opacity: .5;
+    z-index: 15;
 }
 header .pattern svg {
     width: auto;
