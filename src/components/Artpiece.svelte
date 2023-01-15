@@ -1,10 +1,10 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
-    import { EffectFade } from 'swiper';
-    import { Autoplay } from 'swiper/core';
-    
-    import 'swiper/css/effect-fade';
+  import { EffectFade } from 'swiper';
+  import { Autoplay } from 'swiper/core';  
+  import 'swiper/css/effect-fade';
 	import 'swiper/css';
+  import Saos from 'saos';
 
     const items = [
     {
@@ -32,7 +32,8 @@
   {#each items as item, i}
     <SwiperSlide>
         <div class="swiper-slide">
-            <img src={ item.img } alt="">
+          <Saos once={true} animation={"zooming 3.0s cubic-bezier(0.2, 0.6, 0.35, 1) both"}>
+            <img src={ item.img } alt=""></Saos>
             <div class="info">
               <h3 class="p" lang="en">{ item.title }</h3>
             </div>
@@ -46,7 +47,16 @@
 
 
 <style>
+@keyframes -global-zooming {
+	0% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
 
+.swiper-slide {
+    width: 100%;
+    height: 100vw;
+    overflow: hidden;
+}
 .swiper-slide img {
     width: 100%;
     height: 100vw;

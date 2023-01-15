@@ -1,19 +1,31 @@
-
+<svelte:window on:scroll={indexScroll} />
 <script>
-	//import Saos from "saos";
-	//import { Swiper, SwiperSlide } from 'swiper/svelte';
-	//import 'swiper/css';
-	import Logo from '../components/Logo@.svelte';
-	import TextLogo from '../components/TextLogo.svelte';
-	import Hyphen from '../components/Hyphen.svelte';
-	import Exhibition from '../components/Exhibition.svelte';
-	import Artpiece from '../components/Artpiece.svelte';
-	import Sign from '../components/Sign.svelte';
-	import Saos from 'saos';
-	import { onMount } from "svelte";
-	import { browser } from "$app/environment";
-	import { gsap } from "gsap/dist/gsap";
+//import Saos from "saos";
+//import { Swiper, SwiperSlide } from 'swiper/svelte';
+//import 'swiper/css';
+import Logo from '../components/Logo@.svelte';
+import TextLogo from '../components/TextLogo.svelte';
+import Hyphen from '../components/Hyphen.svelte';
+import Exhibition from '../components/Exhibition.svelte';
+import Artpiece from '../components/Artpiece.svelte';
+import Sign from '../components/Sign.svelte';
+import Saos from 'saos';
+import { onMount } from "svelte";
+import { browser } from "$app/environment";
+import { gsap } from "gsap/dist/gsap";
 	
+
+function indexScroll() {
+    if (browser) {
+        let index = document.getElementById("index-top");
+        let currentY = window.pageYOffset;
+        window.addEventListener("scroll", () => {
+            if ( currentY < 5 ) {
+                index.classList.add('scrolled');
+			}
+		})
+	}
+}
 
 onMount(() => {
 
@@ -59,6 +71,11 @@ onMount(() => {
 	  stagger: .15,
       ease: 'power2.inOut',
     }, "op+=1.5")
+	tl.from('#index-first, #index-second', {
+      duration: .75,
+	  opacity: 0,
+      ease: 'power2.inOut',
+    }, "op+=3.0")
 	/*
 	tl.to('#index-top', {
       duration: 3,
@@ -80,13 +97,12 @@ onMount(() => {
 </svelte:head>
 
 
-<main data-scroll-section>
+<main>
 
 	<div class="bg-washi"></div>
 	<section id="index-top">
 		<div class="symbol"><Logo /></div>
 	</section>
-
 	
 	<section id="index-first">
 	  <Saos once={true} animation={"scroll-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
@@ -180,9 +196,9 @@ onMount(() => {
 		<h1 class="h4" lang="en">about</h1>
 	  </div>
 	  </Saos>
-	  <Saos once={true} animation={"paragraphy-animation 3.0s cubic-bezier(.7,0,.2,1) both"}>
-	  <img src="../image/about.jpg" alt="">
-	  </Saos>
+	  <div class="imgWrapper">
+		<Saos once={true} animation={"zooming 3.0s cubic-bezier(0.2, 0.6, 0.35, 1) both"}><img src="../image/about.jpg" alt=""></Saos>
+	  </div>
 	  <Saos once={true} animation={"paragraphy-animation 3.0s cubic-bezier(.7,0,.2,1) both"}>
 	  <div class="logo"><TextLogo /></div>
 	  </Saos>
@@ -255,6 +271,10 @@ onMount(() => {
 <style>
 
 main {visibility: hidden;}
+@keyframes -global-zooming {
+	0% {transform: scale(1.2);opacity: 0;}
+  100% {transform: scale(1);opacity: 1;}
+}
 
 @keyframes -global-scroll-animation {
 	0% {
@@ -374,6 +394,11 @@ section {position: relative;}
 
 
 #index-fifth {margin: 10rem 0 0;}
+#index-fifth .imgWrapper {
+	width: calc(100vw - var(--padding) + 1px);
+    height: 60vw;
+	overflow: hidden;
+}
 #index-fifth img {
 	width: calc(100vw - var(--padding) + 1px);
     height: 60vw;

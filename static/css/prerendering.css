@@ -10,6 +10,18 @@ header .top svg {
     transform: translateX(2.8px);
 }
 
+#index-top {
+    position: fixed;
+    transition: 2.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 11;
+}
+#index-top.scrolled {
+    position: relative !important;
+    height: 45svh !important;
+    height: 50vh !important;
+    background-position: 20%;
+}
+
 .exhibitions .swiper-slide .info {opacity: 0; transition: 1.5s ease-in-out;}
 .exhibitions .swiper-slide-active .info {opacity: 1; transition: 3.0s 1.0s ease-in-out;}
 
