@@ -7,6 +7,7 @@
 	import Exhibition from '../components/Exhibition.svelte';
 	import Artpiece from '../components/Artpiece.svelte';
 	import Sign from '../components/Sign.svelte';
+	import Saos from 'saos';
 	import { onMount } from "svelte";
 	import { browser } from "$app/environment";
 	import { gsap } from "gsap/dist/gsap";
@@ -14,11 +15,17 @@
 
 onMount(() => {
 	
-	let index = document.getElementsByClassName('Index');
+	let main = document.getElementsByTagName('main');
   	if (browser) {
-    	//index[0].style.visibility = "visible";
+    	main[0].style.visibility = "visible";
   	}
 	const tl = gsap.timeline();
+	tl.from('#index-top', {
+      duration: 3,
+	  opacity: 0,
+	  stagger: .15,
+      ease: 'power2.inOut',
+    })
 	tl.from('#index-top .symbol .logo path', {
       duration: 1,
 	  opacity: 0,
@@ -77,12 +84,16 @@ onMount(() => {
 		<div class="symbol"><Logo /></div>
 	</section>
 
+	
 	<section id="index-first">
+	  <Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="section-head">
 		<span class="h4" lang="en">01.</span>
 		<Hyphen />
 		<h1 class="h4" lang="en">fragrance</h1>
 	  </div>
+	  </Saos>
+	  <Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="wrapper">
 		<h2 class="h2">心を澄まして<br>聞くかほり</h2>
 		<p>素材との出会い、抽出、調香まで<br>
@@ -90,34 +101,44 @@ onMount(() => {
 			季節や風土のめぐりに触れる香りづくり
 		</p>
 	  </div>
+	  </Saos>
 	</section>
 
 	<section id="index-second">
+	  <Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="section-head">
 		<span class="h4" lang="en">02.</span>
 		<Hyphen />
 		<h1 class="h4" lang="en">essence</h1>
 	  </div>
+	  </Saos>
+
 	  <div class="bg">
+		<Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">自然の音色を聞く</h2>
 			<h3 class="h4" lang="en">extract</h3>
 			<p>暦や土地によって変化する植物の声に<br>耳を澄ましてその本質を抽出</p>
 	  	</div>
+		</Saos>
+		<Saos once={true} animation={"scroll-animation 2.5s .25s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">心の声を聞く</h2>
 			<h3 class="h4" lang="en">blend</h3>
 			<p>それぞれの感性をひらき<br>心に響く余韻のある調香</p>
 	  	</div>
+		</Saos>
+		<Saos once={true} animation={"scroll-animation 2.5s .5s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">物語を聞く</h2>
 			<h3 class="h4" lang="en">ensemble</h3>
 			<p>体験や空間が纏う空気を掬い<br>ともに奏でるコラボレーション</p>
 	  	</div>
+		</Saos>
 	  </div>
 	</section>
 	
-
+	<Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-third" class="js-scroll">
 	  <div class="section-head">
 		<span class="h4" lang="en">03.</span>
@@ -130,7 +151,9 @@ onMount(() => {
 		<Exhibition />
 	  </div>
 	</section>
+	</Saos>
 
+	<Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-fourth">
 	  <div class="section-head">
 		<span class="h4" lang="en">04.</span>
@@ -143,8 +166,8 @@ onMount(() => {
 	  <div class="swiper exhibitions">
 		  <Artpiece />
 	  </div>
-
 	</section>
+	</Saos>
 
 	<section id="index-fifth">
 	  <div class="section-head">
@@ -155,36 +178,45 @@ onMount(() => {
 	  <div class="logo"><Logo /></div>
 	  
 	  <div class="paragraph">
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		2012年創立<br>
-		日本発のナチュラルフレグランスブランド。</p>
+		日本発のナチュラルフレグランスブランド。</p></Saos>
 
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		幼少期から音楽を続けていた調香師が、<br>
 		植物の香りと出逢い、情景や記憶との<br>
-		結びつきを体感。</p>
+		結びつきを体感。</p></Saos>
 
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		自然に内在する”響き”を奏でるような、<br>
-	  	抽出、調香の実験をはじめました。</p>
+	  	抽出、調香の実験をはじめました。</p></Saos>
+
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 	  	日本の豊かな素材と香文化、<br>西洋の歴史ある香水文化。<br>
-	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。</p>
+	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。</p></Saos>
 
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
-	  風のように偶然性と余白のある、かほり。</p>
+	  風のように偶然性と余白のある、かほり。</p></Saos>
 
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 	  だからこそ生まれる、人々との共鳴を<br>喜びとし、
-	  おひとりおひとりに<br>届けられたらと願っています。</p>
+	  おひとりおひとりに<br>届けられたらと願っています。</p></Saos>
 	
 	</div>
+	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="sign"><Sign /></div>
+	</Saos>
 	  
 	  
 	</section>
 
-
+	<Saos once={true} animation={"last-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-sixth" class="white">
 	  <div class="section-head">
 		<span class="h4" lang="en">06.</span>
@@ -206,23 +238,49 @@ onMount(() => {
 		  </ul>
 	  </div>
 	</section>
+	</Saos>
 	
 </main>
 
 <style>
 
+main {visibility: hidden;}
+
 @keyframes -global-scroll-animation {
-	0% {transform: translateY(1.5rem);opacity: 0;}
-	100% {transform: translateX(0);opacity: 1;}
+	0% {
+		transform: translateY(3px);
+		filter: blur(1px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		filter: blur(0);
+		opacity: 1;
+	}
 }
-@keyframes -global-opening {
-	0% {transform: translateY(.5rem);opacity: 0;filter: blur(10px);}
-	100% {transform: translateX(0);opacity: 1;filter: blur(0);}
+@keyframes -global-paragraphy-animation {
+	0% {
+		transform: translateX(1px);
+		filter: blur(5px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		filter: blur(0);
+		opacity: 1;
+	}
 }
-@keyframes -global-opening-img {
-	0% {filter: saturate(0);}
-	100% {filter: saturate(1);}
+
+@keyframes -global-last-animation {
+	0% {
+		height: 100%;
+	}
+	100% {
+		transform: 100vh;
+	}
 }
+
+
 
 #index-first, #index-second {padding-top: 10rem;}
 #index-third {padding-top: 12.5rem;}
