@@ -1,23 +1,24 @@
 <script>
-	import { Swiper, SwiperSlide } from 'swiper/svelte';
-    import { EffectFade } from 'swiper';
-    import { Autoplay } from 'swiper/core';
-    
-    import 'swiper/css/effect-fade';
-	import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/svelte';
+import { EffectFade } from 'swiper';
+import { Autoplay } from 'swiper/core';
+import 'swiper/css/effect-fade';
+import 'swiper/css';
 
-    const items = [
-    {
-      title: "sona",
-      info: "Autumn 2022 at Kumu Tokyo",
-      img: "../image/exhibition_1.jpg"
-    },
-    {
-      title: "CHIQ - Wine × Fragrance",
-      info: "Summer 2022 at OFS gallery",
-      img: "../image/exhibition_2.jpeg"
-    }
-    ];
+  const items = [
+  {
+    title: "sona",
+    info: "Autumn 2022 at Kumu Tokyo",
+    img: "../image/exhibition_1.jpg"
+  },
+  {
+    title: "CHIQ - Wine × Fragrance",
+    info: "Summer 2022 at OFS gallery",
+    img: "../image/exhibition_2.jpeg"
+  }
+  ];
+
+
 </script>
 
 

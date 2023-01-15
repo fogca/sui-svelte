@@ -39,10 +39,10 @@ onMount(() => {
       ease: 'power4.inOut',
     }, "op+=2.2")
 	tl.from('#index-top .symbol .texts path', {
-      duration: 3.5,
+      duration: 3,
 	  opacity: 0,
-	  stagger: .025,
-      ease: 'power2.inOut',
+	  stagger: .05,
+      ease: 'power3.inOut',
     }, "op+=4.2")
 	tl.from('#index-top .symbol', {
       duration: 3,
@@ -71,7 +71,7 @@ onMount(() => {
 </svelte:head>
 
 <main>
-	
+
 	<div class="bg-washi"></div>
 	<section id="index-top">
 		<div class="symbol"><Logo /></div>
@@ -253,7 +253,7 @@ section {position: relative;}
 	background-size: cover;
 }
 
-#index-top .symbol {width: 14rem;}
+#index-top .symbol {width: 17.5rem;}
 
 #index-first .wrapper p {margin-top: 1.5rem;}
 
