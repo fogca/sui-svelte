@@ -1,4 +1,4 @@
-<svelte:window on:scroll={indexScroll} />
+
 <script>
 //import Saos from "saos";
 //import { Swiper, SwiperSlide } from 'swiper/svelte';
@@ -14,18 +14,17 @@ import { onMount } from "svelte";
 import { browser } from "$app/environment";
 import { gsap } from "gsap/dist/gsap";
 	
-
+/*
 function indexScroll() {
     if (browser) {
-        let index = document.getElementById("index-top");
+        let body = document.body;
         let currentY = window.pageYOffset;
-        window.addEventListener("scroll", () => {
-            if ( currentY < 5 ) {
-                index.classList.add('scrolled');
-			}
-		})
+        if ( currentY < 5 ) {
+            body.classList.add('scrolled');
+		}
 	}
 }
+*/
 
 onMount(() => {
 
