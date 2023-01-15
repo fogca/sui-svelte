@@ -118,7 +118,6 @@ header.show {opacity: 1;}
 header .top {
     width: 100%;
     text-align: center;
-    opacity: .8;
 }
 header .bottom {width: 100%;}
 header .bottom ul li {

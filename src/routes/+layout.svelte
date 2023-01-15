@@ -1,8 +1,11 @@
 <script>
 //import { page } from '$app/stores';
 //import PageTransition from '../components/PageTransition.svelte';  
+import { page } from '$app/stores';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
+import LocomotiveScrollProvider from 'svelte-locomotive-scroll';
+//import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 
 /* @type {import('./$types').LayoutData} */
@@ -20,19 +23,25 @@ import Footer from '../components/Footer.svelte';
 </svelte:head>
   
 <div>
-<!--
-  <div 
-    class:Index={currentRoute === "/"} 
-    class:Projects={currentRoute === "/projects"}
-  >-->
+  <LocomotiveScrollProvider
+	options={{
+		smooth: true,
+		smoothMobile: true,
+		getDirection: true,
+		getSpeed: true,
+		inertia: 0.5
+	}}
+	watch={$page}
+	location={$page.url}
+	onLocationChange={(scroll) => scroll.scrollTo(0, { duration: 2, disableLerp: false })}
+	imageTarget={'.grid-item-media'}
+>
 
-  <!-- 2. Pass the `url` prop to the `PageTransition` component, causing it to re-render when the page changes -->
-  
-  <!--<PageTransition pathname={data.pathname}>-->
     <Header></Header>
       <slot />
     <Footer></Footer>
-  <!--</PageTransition>-->
+
+</LocomotiveScrollProvider>
   
   </div>
   
