@@ -27,38 +27,38 @@ onMount(() => {
 	  opacity: 0,
 	  stagger: .15,
       ease: 'power2.inOut',
-    })
+    }, "op")
 	tl.from('#index-top .symbol .logo path', {
       duration: 1,
 	  opacity: 0,
 	  stagger: .15,
       ease: 'power2.inOut',
-    }, "op")
+    }, "op+=1.5")
 	tl.from('#index-top .symbol .typography path', {
       duration: 2,
 	  opacity: 0,
 	  stagger: .0,
       ease: 'power2.inOut',
-    }, "op+=1.5")
+    }, "op+=3.0")
 	tl.from('#index-top .symbol .object path', {
       duration: 3,
 	  opacity: 0,
 	  rotate: "3deg",
 	  stagger: .15,
       ease: 'power4.inOut',
-    }, "op+=2.2")
+    }, "op+=3.7")
 	tl.from('#index-top .symbol .texts path', {
-      duration: 3,
+      duration: 4,
 	  opacity: 0,
-	  stagger: .05,
+	  stagger: .015,
       ease: 'power3.inOut',
-    }, "op+=4.2")
+    }, "op+=5.5")
 	tl.from('#index-top .symbol', {
       duration: 3,
       filter: "blur(5px)",
 	  stagger: .15,
       ease: 'power2.inOut',
-    }, "op")
+    }, "op+=1.5")
 	/*
 	tl.to('#index-top', {
       duration: 3,

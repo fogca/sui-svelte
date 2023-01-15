@@ -4,7 +4,7 @@
 import { page } from '$app/stores';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
-import LocomotiveScrollProvider from 'svelte-locomotive-scroll';
+//import LocomotiveScrollProvider from 'svelte-locomotive-scroll';
 //import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 
@@ -23,6 +23,7 @@ import LocomotiveScrollProvider from 'svelte-locomotive-scroll';
 </svelte:head>
   
 <div>
+  <!--
   <LocomotiveScrollProvider
 	options={{
 		smooth: true,
@@ -35,13 +36,13 @@ import LocomotiveScrollProvider from 'svelte-locomotive-scroll';
 	location={$page.url}
 	onLocationChange={(scroll) => scroll.scrollTo(0, { duration: 2, disableLerp: false })}
 	imageTarget={'.grid-item-media'}
->
+>-->
 
     <Header></Header>
       <slot />
     <Footer></Footer>
-
+<!--
 </LocomotiveScrollProvider>
-  
+-->
   </div>
   

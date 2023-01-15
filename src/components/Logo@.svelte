@@ -113,5 +113,8 @@
 
   <style>
   .Symbol {width: 100%;height: auto;}
-  .Symbol path {fill: white;}
+  .Symbol path {
+    fill: var(--backgroundColor);
+    filter: brightness(0.95);
+  }
   </style>
