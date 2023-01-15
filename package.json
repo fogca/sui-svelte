@@ -23,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"gsap": "^3.11.4",
+		"locomotive-scroll": "^4.1.4",
 		"swiper": "^8.4.4"
 	}
 }

@@ -4,6 +4,12 @@ header .Symbol g.texts {display: none;}
 header.show,header.up {opacity: 1 !important;}
 header.top, header.show.top {opacity: 0 !important;}
 
+header .top svg {
+    width: auto;
+    height: 10.5rem;
+    transform: translateX(2.8px);
+}
+
 .exhibitions .swiper-slide .info {opacity: 0; transition: 1.5s ease-in-out;}
 .exhibitions .swiper-slide-active .info {opacity: 1; transition: 3.0s 1.0s ease-in-out;}
 

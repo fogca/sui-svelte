@@ -4,6 +4,7 @@
     import Saos from "saos";
     import Logo from './Logo.svelte';
     import LogoVert from './LogoVert.svelte';
+    import TextLogo from './TextLogo.svelte';
     import LogoA from './Logo@.svelte';
     import { browser } from '$app/environment';
 
@@ -135,7 +136,8 @@ header .pattern {
     position: absolute;
     top: -3rem;
     width: 100%;
-    opacity: .5;
+    opacity: .1;
+    filter: brightness(3);
     z-index: 15;
 }
 header .pattern svg {
