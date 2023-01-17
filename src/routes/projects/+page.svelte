@@ -89,6 +89,7 @@ onMount(() => {
 
 #pt {
 	height: calc(100vh - (100vw - var(--padding) + var(--padding)));
+	height: calc(100dvh - (100vw - var(--padding) + var(--padding)));
 	padding-top: 4rem;
 	position: relative;
 }
