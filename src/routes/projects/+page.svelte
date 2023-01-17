@@ -24,7 +24,7 @@ onMount(() => {
 </svelte:head>
 
 <main class="page">
-
+	<div class="bg-washi"></div>
 	<section id="pt">
 		<a href="/" class="logo"><TextLogo /></a>
 		<div class="wrapper">
@@ -64,6 +64,8 @@ onMount(() => {
 
 <style>
 
+.bg-washi {opacity: .4;}
+
 @keyframes -global-scroll-animation {
 	0% {
 		transform: translateY(3px);
@@ -91,18 +93,26 @@ onMount(() => {
 #pt .wrapper p {
 	opacity: .75;
     margin-top: 0.5rem;
+	font-size: 1.3rem;
+    line-height: 2.3;
 }
 
+#pi {position: relative;}
+#pi .wrapper .container img {width: calc(100% + 1rem);}
 #pi .wrapper .container:nth-of-type(1) img {
-	width: calc(100vw - var(--padding));
+	width: calc(100vw - var(--padding) + 1px);
 	height: calc(100vw - var(--padding));
 	margin-bottom: 3rem;
+	margin-left: -1px;
 }
 #pi .wrapper .container:nth-of-type(1) h2 {margin: 0;}
 
 #pi .wrapper .container {margin-bottom: 8rem;}
-#pi .wrapper .container a {font-feature-settings: normal;}
-#pi .wrapper .container h2 {margin: 2.5rem 0 1rem;}
+#pi .wrapper .container a {
+	font-feature-settings: normal;
+	letter-spacing: .3em;
+}
+#pi .wrapper .container h2 {margin: 1.5rem 0 0.8rem;}
 #pi .wrapper .container p {
 	width: 97.5%;
 	font-size: 1.15rem;

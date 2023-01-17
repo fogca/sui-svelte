@@ -79,7 +79,7 @@
 
         <div class="bottom">
             <ul>
-                <li><a href="/">プロジェクト</a></li>
+                <li><a href="/projects">プロジェクト</a></li>
                 <li><a href="/">展示のお知らせ</a></li>
                 <li><a href="/">お問い合わせ</a></li>
             </ul>
@@ -137,7 +137,7 @@ header .pattern {
     width: 100%;
     opacity: .1;
     filter: brightness(3);
-    z-index: 15;
+    z-index: -1;
 }
 header .pattern svg {
     width: auto;

@@ -317,15 +317,7 @@ main {visibility: hidden;}
 
 section {position: relative;}
 
-.bg-washi {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	/*background-image: url('../image/bg.webp');*/
-	background-image: url(/image/bg.webp);
-	background-size: cover;
-	opacity: .275;
-}
+
 
 #index-top {	
 	width: 100vw;
