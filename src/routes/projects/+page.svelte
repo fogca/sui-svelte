@@ -14,19 +14,26 @@
 	import { gsap } from "gsap/dist/gsap";
 
 
-onMount(() => {
 
+
+onMount(() => {
+	let pt = document.getElementById('pt');
+  	if (browser) {
+    	pt.style.visibility = "visible";
+  	}
 });
+
+
 </script>
 
 <svelte:head>
-	<title>これまで制作したかほり | atelier sui - 蕊 | 心を澄まして聞くかほり</title>
+	<title>かほりのプロジェクト | atelier sui - 蕊 | 心を澄まして聞くかほり</title>
 </svelte:head>
 
 <main class="page">
 	<div class="bg-washi"></div>
 	<section id="pt">
-		<a href="/" class="logo"><TextLogo /></a>
+		<a href="/" class="logo" data-sveltekit-reload><TextLogo /></a>
 		<div class="wrapper">
 			<h1 class="h4">かほりのプロジェクト</h1>
 			<p>蒸留家・調香師として参画した<br>プロジェクトになります。</p>
@@ -37,23 +44,23 @@ onMount(() => {
 	  <div class="wrapper">
 
 		  <div class="container">
-			<img src="../image/about.jpg" alt="">
+			<div class="image"><img src="../image/projects_senn.jpeg" alt=""></div>
 			<h2 class="h3" lang="en">senn - skin care brand</h2>
-			<p>山の花は、多治見をはじめとする「東濃」で作られるやきものを常設販売する器のセレクショップです。作家モノを中心に、地元メーカーの工業製品やオブジェまで幅広く取り扱い、東濃のやきもののクオリティの高さと多様性を楽しむことができます。</p>
+			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。また本文章の文字量が足りない場合は適宜適切な分量をコピーアンドペーストし、ご活用ください。</p>
+			<a href="https://shop.sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
+		  </div>
+
+		  <div class="container">
+			<img src="../image/projects_senn.jpeg" alt="">
+			<h2 class="h3" lang="en">senn - skin care brand</h2>
+			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。</p>
 			<a href="https://sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
 		  </div>
 
 		  <div class="container">
-			<img src="../image/about.jpg" alt="">
+			<img src="../image/projects_senn.jpeg" alt="">
 			<h2 class="h3" lang="en">senn - skin care brand</h2>
-			<p>山の花は、多治見をはじめとする「東濃」で作られるやきものを常設販売する器のセレクショップです。作家モノを中心に、地元メーカーの工業製品やオブジェまで幅広く取り扱い、東濃のやきもののクオリティの高さと多様性を楽しむことができます。</p>
-			<a href="https://sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
-		  </div>
-
-		  <div class="container">
-			<img src="../image/about.jpg" alt="">
-			<h2 class="h3" lang="en">senn - skin care brand</h2>
-			<p>山の花は、多治見をはじめとする「東濃」で作られるやきものを常設販売する器のセレクショップです。作家モノを中心に、地元メーカーの工業製品やオブジェまで幅広く取り扱い、東濃のやきもののクオリティの高さと多様性を楽しむことができます。</p>
+			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。</p>
 			<a href="https://sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
 		  </div>
 		  
@@ -64,7 +71,8 @@ onMount(() => {
 
 <style>
 
-.bg-washi {opacity: .4;}
+.bg-washi {opacity: .5;}
+.page {padding-bottom: 4rem;}
 
 @keyframes -global-scroll-animation {
 	0% {
@@ -98,12 +106,20 @@ onMount(() => {
 }
 
 #pi {position: relative;}
-#pi .wrapper .container img {width: calc(100% + 1rem);}
-#pi .wrapper .container:nth-of-type(1) img {
+
+#pi .wrapper .container img {width: 100%;}
+#pi .wrapper .container:nth-of-type(1) .image {
 	width: calc(100vw - var(--padding) + 1px);
 	height: calc(100vw - var(--padding));
 	margin-bottom: 3rem;
 	margin-left: -1px;
+	overflow: hidden;
+}
+#pi .wrapper .container:nth-of-type(1) .image img {
+	object-position: 25%;
+	width: 100%;
+	height: 100%;
+	transition: 1s ease-in-out;
 }
 #pi .wrapper .container:nth-of-type(1) h2 {margin: 0;}
 

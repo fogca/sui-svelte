@@ -91,7 +91,7 @@
 
 header {
     opacity: 0;
-    width: 5rem;
+    width: var(--padding);
     height: 100vh;
     position: fixed;
     left: auto;

@@ -28,9 +28,9 @@ function indexScroll() {
 
 onMount(() => {
 
-	let main = document.getElementsByTagName('main');
+	let inxtp = document.getElementById('index-top');
   	if (browser) {
-    	main[0].style.visibility = "visible";
+    	inxtp.style.visibility = "visible";
   	}
 	const tl = gsap.timeline();
 	tl.from('#index-top', {
@@ -269,7 +269,7 @@ onMount(() => {
 
 <style>
 
-main {visibility: hidden;}
+#index-top {visibility: hidden;}
 @keyframes -global-zooming {
 	0% {transform: scale(1.2);opacity: 0;}
   100% {transform: scale(1);opacity: 1;}
