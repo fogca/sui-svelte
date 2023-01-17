@@ -80,7 +80,7 @@
         <div class="bottom">
             <ul>
                 <li><a href="/projects">プロジェクト</a></li>
-                <li><a href="/">展示のお知らせ</a></li>
+                <li><a href="/news">展示のお知らせ</a></li>
                 <li><a href="/">お問い合わせ</a></li>
             </ul>
         </div>
@@ -126,7 +126,7 @@ header .bottom ul li {
 }
 header .bottom ul li a {
     writing-mode: vertical-rl;
-    margin-left: -0.5px;
+    margin-left: -2.5px;
     font-feature-settings: initial;
     font-size: 1.05rem;
 }
@@ -136,7 +136,7 @@ header .pattern {
     top: -3rem;
     width: 100%;
     opacity: .1;
-    filter: brightness(3);
+    filter: brightness(3.8);
     z-index: -1;
 }
 header .pattern svg {

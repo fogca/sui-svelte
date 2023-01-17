@@ -129,7 +129,10 @@ onMount(() => {
 	font-feature-settings: normal;
 	letter-spacing: .3em;
 }
-#pi .wrapper .container h2 {margin: 1.5rem 0 0.8rem;}
+#pi .wrapper .container h2 {
+	margin: 1.5rem 0 0.8rem;
+	margin-left: -.9px;
+}
 #pi .wrapper .container p {
 	width: 97.5%;
 	font-size: 1.15rem;

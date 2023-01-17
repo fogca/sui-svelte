@@ -2,7 +2,7 @@
 	//import Saos from "saos";
 	//import { Swiper, SwiperSlide } from 'swiper/svelte';
 	//import 'swiper/css';
-	import Logo from '../../components/Logo@.svelte';
+	import TextLogo from '../../components/TextLogo.svelte';
 	import Hyphen from '../../components/Hyphen.svelte';
 	import Exhibition from '../../components/Exhibition.svelte';
 	import Artpiece from '../../components/Artpiece.svelte';
@@ -24,188 +24,103 @@ onMount(() => {
 
 <main class="page">
 
-	<section id="news">
-	  <Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <div class="page-head">
+	<div class="bg-washi"></div>
+	<section id="nt">
+		<a href="/" class="logo" data-sveltekit-reload><TextLogo /></a>
+		<h1 class="h3">展示やイベントのお知らせ</h1>
 		<div class="h5" lang="en">information</div>
-		<h1 class="h2">展示やイベントの<br>お知らせ</h1>
-	  </div>
-	  </Saos>
+	</section>
 
-	  <Saos once={true} animation={"scroll-animation 2.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <div class="wrapper">
-		  
-	  </div>
-	  </Saos>
+	<section id="ni">
+		<div class="wrapper">
+
+			<a href="/" class="container">
+				<div class="info">
+					<span class="h6" lang="en">Exhibition</span> - <span class="h6" lang="en">12/12 - 12/18</span>
+				</div>
+				<h2 class="p">東京KUMUにて個展「sona」を開催いたします。</h2>
+				<a href="/">詳細をみる</a>
+			</a>
+			<a href="/" class="container">
+				<div class="info">
+					<span class="h6" lang="en">Exhibition</span> - <span class="h6" lang="en">12/12 - 12/18</span>
+				</div>
+				<h2 class="p">東京KUMUにて個展「sona」を開催いたします。</h2>
+				<a href="/">詳細をみる</a>
+			</a>
+			<a href="/" class="container">
+				<div class="info">
+					<span class="h6" lang="en">Exhibition</span> - <span class="h6" lang="en">12/12 - 12/18</span>
+				</div>
+				<h2 class="p">東京KUMUにて個展「sona」を開催いたします。</h2>
+				<a href="/">詳細をみる</a>
+			</a>
+			<a href="/" class="container">
+				<div class="info">
+					<span class="h6" lang="en">Exhibition</span> - <span class="h6" lang="en">12/12 - 12/18</span>
+				</div>
+				<h2 class="p">東京KUMUにて個展「sona」を開催いたします。</h2>
+				<a href="/">詳細をみる</a>
+			</a>
+			
+		</div>
 	</section>
 
 </main>
 
 <style>
 
-.page {
-	padding-top: 15rem;
-}
-
 @keyframes -global-scroll-animation {
 	0% {
 		transform: translateY(3px);
 		filter: blur(1px);
 		opacity: 0;
-	}
-	100% {
+	} 100% {
 		transform: translateX(0);
 		filter: blur(0);
 		opacity: 1;
-	}
-}
-@keyframes -global-paragraphy-animation {
-	0% {
-		transform: translateX(1px);
-		filter: blur(5px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateX(0);
-		filter: blur(0);
-		opacity: 1;
-	}
-}
-
-@keyframes -global-last-animation {
-	0% {
-		height: 100%;
-	}
-	100% {
-		transform: 100vh;
-	}
-}
+}}
 
 
 
-#index-first, #index-second {padding-top: 10rem;}
-#index-third {padding-top: 12.5rem;}
-#index-fourth {padding-top: 8rem;}
-
-section {position: relative;}
-
-.bg-washi {
-	position: fixed;
+#nt {
 	width: 100vw;
-	height: 100vh;
-	/*background-image: url('../image/bg.webp');*/
-	background-image: url(/image/bg.webp);
-	background-size: cover;
-	opacity: .275;
-}
-
-#index-top {	
-	width: 100vw;
-	height: 100vh;
-	height: 100svh;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-    padding-bottom: 0;
-	background-image: url('../image/sui_2023.jpg');
-	background-image: url(/image/top.jpg);
+	padding: 4rem var(--padding) 8rem;
+	background-image: url(/image/exhibition_1.jpg);
 	background-size: cover;
 }
+#nt .logo {width: 13rem;}
+#nt h1 {margin-top: 5rem;}
 
-#index-top .symbol {width: 17.5rem;}
-
-#index-first .wrapper p {margin-top: 1.5rem;}
-
-#index-second .bg {
-	width: 100vw;
-	margin-top: 4rem;
-	margin-left: calc(-1 * var(--padding));
-	padding: 12rem 0 11rem;
-	padding-left: var(--padding);
-	background-image: url('../image/essence.jpg');
-	background-image: url(/image/essence.jpg);
-	background-size: cover;
+#nt * {
+	color: var(--backgroundColor);
+	fill: var(--backgroundColor);
 }
-#index-second .container {margin-bottom: 4.5rem;}
-#index-second .container:nth-of-type(3) {margin-bottom: 0;}
-#index-second .container h2 {
-	font-size: 1.7rem;
-	margin-left: -0.5px;
+
+
+
+#ni {
+	margin-top: 8rem;
+	position: relative;
 }
-#index-second .container h3 {
+#ni a.container {margin-bottom: 5rem;}
+#ni .info span {opacity: .5;}
+#ni h2 {
+	font-size: 1.45rem;
+	width: 80%;
+	margin: .5rem 0 1.5rem;
+	margin-left: -0.8px;
+}
+#ni a.container a {
 	opacity: .5;
-	margin-top: -.25rem;
-	margin-bottom: 1.0rem;
+	margin-left: 1.5px;
+	letter-spacing: .3em;
+	text-decoration: underline;
 }
-#index-second .container p {
-	line-height: 2;
-	margin-left: -.5px;
-	opacity: .9;
-}
-
-
-
-#index-third .section-head, #index-fourth .section-head {margin-bottom: 1.5rem;}
-
-#index-third .exhibitions {
-	width: calc(100vw - var(--padding));
-	width: 100%;
-	margin-top: 3rem;
-}
-
-
-
-#index-fourth p {font-size: 1.1rem;}
-#index-fourth .exhibitions {
-	margin-top: 3rem;
-	width: 100vw;
-    margin-left: calc(-1 * var(--padding));
-}
-
-
-
-#index-fifth {margin: 10rem 0 0;}
-#index-fifth .logo {width: 16.5rem;margin: 4rem 0;}
-#index-fifth .paragraph p {
-	line-height: 2.8;
-	margin-bottom: 1.6rem;
-}
-#index-fifth .sign {margin-top: 5rem;}
-
-
-#index-sixth {
-	width: 100vw;
-	margin-top: 15rem;
-	padding: 10rem var(--padding) 5rem;
-	background-image: url('../image/sui_2023.jpg');
-	background-image: url(/image/kv.webp);
-	background-size: cover;
-}
-#index-sixth h2 {
-	font-size: 1.15rem;
-	margin-top: 6rem;}
-#index-sixth .mail {margin: 4rem 0 10rem;}
-#index-sixth .mail a {border-bottom: solid 0.5px var(--backgroundColor);}
-#index-sixth .links ul li {margin-bottom: 1rem;}
-
-
-
-
-
  
   
   
   
-
-
-
-
-
-
-#index-sixth img {
-    width: calc(100% + 6.5vw);
-    aspect-ratio: 2/1;
-}
 
 
 	

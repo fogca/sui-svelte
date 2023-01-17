@@ -11,6 +11,9 @@ header .top svg {
 }
 
 
+#nt * {fill: var(--backgroundColor);}
+
+
 .exhibitions .swiper-slide .info {opacity: 0; transition: 1.5s ease-in-out;}
 .exhibitions .swiper-slide-active .info {opacity: 1; transition: 3.0s 1.0s ease-in-out;}
 
