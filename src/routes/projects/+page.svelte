@@ -26,7 +26,7 @@ onMount(() => {
 <main class="page">
 
 	<section id="pt">
-		<div class="logo"><TextLogo /></div>
+		<a href="/" class="logo"><TextLogo /></a>
 		<div class="wrapper">
 			<h1 class="h4">かほりのプロジェクト</h1>
 			<p>蒸留家・調香師として参画した<br>プロジェクトになります。</p>
@@ -104,7 +104,7 @@ onMount(() => {
 #pi .wrapper .container a {font-feature-settings: normal;}
 #pi .wrapper .container h2 {margin: 2.5rem 0 1rem;}
 #pi .wrapper .container p {
-	width: 90%;
+	width: 97.5%;
 	font-size: 1.15rem;
 	opacity: .75;
 	margin: .5rem 0 3rem;
