@@ -100,7 +100,31 @@ onMount(() => {
 
 	<div class="bg-washi"></div>
 	<section id="index-top">
-		
+		<div class="wrapper">
+			<ul class="white">
+				<li><a href="/">
+					<h2 class="h4" lang="en">Perfume projects</h2>
+					<div class="h7">かほりのプロジェクト</div>
+				</a></li>
+
+				<li><a href="/">
+					<h2 class="h4" lang="en">Distillery / Perfume</h2>
+					<div class="h7">蒸留と調香について</div>
+				</a></li>
+
+				<li><a href="/">
+					<h2 class="h4" lang="en">Event - exhibition</h2>
+					<div class="h7">展示やイベント情報</div>
+				</a></li>
+			</ul>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" width="31.92" height="176.22" viewBox="0 0 31.92 176.22">
+			<svg xmlns="http://www.w3.org/2000/svg" width="31.92" height="176.22" viewBox="0 0 31.92 176.22">
+				<path id="パス_1323" data-name="パス 1323" d="M30.509,10.537A4.9,4.9,0,0,0,31.553,8.7a7.264,7.264,0,0,0,.019-4.5A6.986,6.986,0,0,0,28.311.353L27.45,0c2.993,2.114,4.393,5.455,3.587,8.56a4.47,4.47,0,0,1-1.058,1.789l-.112.115.091.14a9.362,9.362,0,0,1,1.591,3.835,4.789,4.789,0,0,0-2.11.681,4.839,4.839,0,0,0-2.178,2.788,4.327,4.327,0,0,0,.333,3.317c.329.715.692,1.525,1.092,2.233A4.964,4.964,0,0,1,25.6,24.6l-.249.012v135.12c-2.7,1.58-4.291,6.362-2.434,10.133a4.953,4.953,0,0,1-2.141.335l-.3-.061-.009.311a5.108,5.108,0,0,1-3.055,4.7c-1.851.888-4.051-4.4-5.613-5.73l-.243-.195-.151.271a4.26,4.26,0,0,1-1.47,1.483c-2.2-4.43-7.012-6.1-9.936-4.746l1.439.77c2.733-1.262,6.3.583,8.123,4.2l.126.25.24-.141a5.034,5.034,0,0,0,1.729-1.676c1.944,1.457,4.209,7.337,6.027,6.494s2.919-3.274,3.07-5.7a5.024,5.024,0,0,0,2.425-.241l.258-.1-.106-.255c-1.55-3.717-.189-7.745,2.524-9V25.029a4.941,4.941,0,0,0,3.072-1.413l.1-.108-.134-.23a8.482,8.482,0,0,1-.865-2.116,5.757,5.757,0,0,1-.016-3.3A4.962,4.962,0,0,1,29.6,15.484a4.3,4.3,0,0,1,2.041-.8l.224-.029-.015-.2a8.534,8.534,0,0,0-1.344-3.92" transform="translate(0 0.001)" fill="#fff"/>
+			</svg>			  
+		</svg>
+		  
+		  
 	</section>
 	
 	<section id="index-first">
@@ -317,16 +341,20 @@ section {position: relative;}
 #index-top {	
 	width: 100vw;
 	height: 100vh;
-	height: 100svh;
+	height: 100dvh;
     display: flex;
-    align-items: center;
-	justify-content: center;
-    padding-bottom: 0;
+    align-items: flex-end;
+	justify-content: space-between;
+    padding-bottom: 7.5rem;
 	background-image: url('../image/sui_2023.jpg');
 	background-image: url(/image/keyvisual.jpg);
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
+#index-top svg {margin-right: -2rem;}
+
+#index-top ul li {margin-top: 2.5rem;}
+#index-top ul li h2 {text-transform: lowercase;}
 
 
 #index-first .section-head {margin-bottom: 3.5rem;}
@@ -385,7 +413,14 @@ section {position: relative;}
 
 
 
-#index-fifth {margin: 15rem 0 0;}
+#index-fifth {
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+	background-image: url(/image/bg.webp);
+	background-size: cover;
+	background-color:rgba(255,255,255,0.7);
+	background-blend-mode:lighten;
+}
 #index-fifth .logo {
 	width: 12.5rem;
 	margin: 5rem 0 1.0rem;
@@ -399,7 +434,6 @@ section {position: relative;}
 
 #index-sixth {
 	width: 100vw;
-	margin-top: 15rem;
 	padding: 10rem var(--padding) 5rem;
 	background-image: url('../image/sui_2023.jpg');
 	background-image: url(/image/kv.webp);
@@ -413,6 +447,18 @@ section {position: relative;}
 #index-sixth .links ul li {margin-bottom: 1rem;}
 
 
+
+
+
+@media screen and (min-width: 720px) {
+
+	#index-fourth .exhibitions {
+    	width: 35vw;
+    	margin-left: 0;
+  	}
+	
+
+}
 
 
 

@@ -78,4 +78,15 @@ const items = [
   font-size: 1.1rem;
   opacity: .5;
 }
+
+
+
+@media screen and (min-width: 720px) {
+
+
+  .swiper-slide img {height: 60vh;}
+
+
+}
+
 </style>

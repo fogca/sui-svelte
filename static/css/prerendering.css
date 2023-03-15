@@ -52,3 +52,14 @@ header .top svg {
   
 
 #index-fifth .logo svg path {fill: var(--textColor);}
+
+
+
+
+
+@media screen and (min-width: 720px) {
+
+
+    #index-third .swiper-slide {width: 20vw}
+
+}

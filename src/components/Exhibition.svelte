@@ -27,7 +27,17 @@ const items = [
     title: "CHIQ - Wine × Fragrance",
     info: "Summer 2022 at OFS gallery",
     img: "../image/exhibition_2.jpeg"
-  }
+  },
+  {
+    title: "CHIQ - Wine × Fragrance",
+    info: "Summer 2022 at OFS gallery",
+    img: "../image/exhibition_2.jpeg"
+  },
+  {
+    title: "sona",
+    info: "Autumn 2022 at Kumu Tokyo",
+    img: "../image/exhibition_1.jpg"
+  },
 
 ];
 
@@ -79,4 +89,18 @@ const items = [
 }
 .exhibitions .swiper-slide .info h3 {margin: .5rem 0 .25rem; opacity: .75;}
 .exhibitions .swiper-slide .info h4 {opacity: .25;}
+
+
+@media screen and (min-width: 720px) {
+.swiper-slide {
+  width: 20vw;
+  height: 25vw;
+  overflow: hidden;
+}
+.swiper-slide img {
+  width: 20vw;
+  height: 25vw;
+}
+}
+
 </style>

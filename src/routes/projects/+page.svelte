@@ -71,7 +71,7 @@ onMount(() => {
 
 <style>
 
-.bg-washi {opacity: .5;}
+.bg-washi {opacity: .15;}
 .page {padding-bottom: 4rem;}
 
 @keyframes -global-scroll-animation {
