@@ -8,7 +8,7 @@
 	/*background-image: url('../image/bg.webp');*/
 	background-image: url(/image/bg.webp);
 	background-size: cover;
-	opacity: .275;
+	opacity: .1;
 	z-index: 0;
 }
 
@@ -33,14 +33,9 @@
 .l-word .date {margin-bottom: .8rem;}
 
 
-.section-head {
-	display: flex;
-	align-items: baseline;
-	opacity: .5;
-	margin-bottom: 2rem;
-}
+.section-head {margin-bottom: 2.8rem;}
+.section-head div {opacity: 0.8;}
 .section-head h1 {margin: 1rem 0;}
-.section-head * {margin-right: 1rem;}
 
 @media screen and (min-width: 720px) {
 

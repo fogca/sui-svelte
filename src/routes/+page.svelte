@@ -100,53 +100,53 @@ onMount(() => {
 
 	<div class="bg-washi"></div>
 	<section id="index-top">
-		<div class="symbol"><Logo /></div>
+		
 	</section>
 	
 	<section id="index-first">
-	  <Saos once={true} animation={"scroll-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	  <Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="section-head">
-		<span class="h4" lang="en">01.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">fragrance</h1>
+		<div class="h4" lang="en">01.</div>
+		<h1 class="h3" lang="en">fragrance</h1>
 	  </div>
 	  </Saos>
-	  <Saos once={true} animation={"scroll-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	  <Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="wrapper">
-		<h2 class="h2">心を澄まして<br>聞くかほり</h2>
+		<h2 class="h3">心を澄まして<br>聞くかほり</h2>
 		<p>素材との出会い、抽出、調香まで<br>
 			小さないのちに内在する響きから<br>
 			季節や風土のめぐりに触れる香りづくり
 		</p>
+		<a href="/" class="h5" lang="en">gallery</a>
 	  </div>
 	  </Saos>
 	</section>
 
 	<section id="index-second">
-	  <Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <div class="section-head">
-		<span class="h4" lang="en">02.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">essence</h1>
-	  </div>
-	  </Saos>
 
 	  <div class="bg">
-		<Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
+		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
+			<div class="section-head white">
+			  <div class="h4" lang="en">02.</div>
+			  <h1 class="h3" lang="en">essence</h1>
+			</div>
+		</Saos>
+
+		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">自然の音色を聞く</h2>
 			<h3 class="h4" lang="en">extract</h3>
-			<p>暦や土地によって変化する植物の声に<br>耳を澄ましてその本質を抽出</p>
+			<p>暦や土地によって変化する<br>植物の声に耳を澄まして<br>その本質を抽出</p>
 	  	</div>
 		</Saos>
-		<Saos once={true} animation={"scroll-animation 3.5s .25s cubic-bezier(.6,0,.2,1) both"}>
+		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">心の声を聞く</h2>
 			<h3 class="h4" lang="en">blend</h3>
 			<p>それぞれの感性をひらき<br>心に響く余韻のある調香</p>
 	  	</div>
 		</Saos>
-		<Saos once={true} animation={"scroll-animation 3.5s .5s cubic-bezier(.6,0,.2,1) both"}>
+		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 	  	<div class="container white">
 			<h2 class="h4">物語を聞く</h2>
 			<h3 class="h4" lang="en">ensemble</h3>
@@ -156,12 +156,11 @@ onMount(() => {
 	  </div>
 	</section>
 	
-	<Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-third" class="js-scroll">
 	  <div class="section-head">
-		<span class="h4" lang="en">03.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">experience</h1>
+		<div class="h4" lang="en">03.</div>
+		<h1 class="h3" lang="en">experience</h1>
 	  </div>
 	  <h2 class="p">各地で行わせていただいた展示や<br>ワークショップの一部をご紹介します。</h2>
 
@@ -171,12 +170,11 @@ onMount(() => {
 	</section>
 	</Saos>
 
-	<Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-fourth">
 	  <div class="section-head">
-		<span class="h4" lang="en">04.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">art piece</h1>
+		<div class="h4" lang="en">04.</div>
+		<h1 class="h3" lang="en">art piece</h1>
 	  </div>
 	  <h2 class="p">様々なご縁でめぐり合った素材から<br>製作した作品のアーカイブ。</h2>
 	  <p style="opacity: .5;" class="h6">一部、販売しているものもございます。</p>
@@ -188,65 +186,60 @@ onMount(() => {
 	</Saos>
 
 	<section id="index-fifth">
-		<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+		<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="section-head">
-		<span class="h4" lang="en">05.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">about</h1>
+		<div class="h4" lang="en">05.</div>
+		<h1 class="h3" lang="en">about</h1>
 	  </div>
 	  </Saos>
-	  <div class="imgWrapper">
-		<Saos once={true} animation={"zooming 3.0s cubic-bezier(0.2, 0.6, 0.35, 1) both"}><img src="../image/about.jpg" alt=""></Saos>
-	  </div>
-	  <Saos once={true} animation={"paragraphy-animation 3.0s cubic-bezier(.7,0,.2,1) both"}>
+	  <Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="logo"><TextLogo /></div>
 	  </Saos>
 	  
 	  <div class="paragraph">
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		2012年創立<br>
 		日本発のナチュラルフレグランスブランド。</p></Saos>
 
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		幼少期から音楽を続けていた調香師が、<br>
 		植物の香りと出逢い、情景や記憶との<br>
 		結びつきを体感。</p></Saos>
 
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 		自然に内在する”響き”を奏でるような、<br>
 	  	抽出、調香の実験をはじめました。</p></Saos>
 
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 	  	日本の豊かな素材と香文化、<br>西洋の歴史ある香水文化。<br>
 	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。</p></Saos>
 
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 	  風のように偶然性と余白のある、かほり。</p></Saos>
 
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <p>
 	  だからこそ生まれる、人々との共鳴を<br>喜びとし、
 	  おひとりおひとりに<br>届けられたらと願っています。</p></Saos>
 	
 	</div>
-	<Saos once={true} animation={"paragraphy-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="sign"><Sign /></div>
 	</Saos>
 	  
 	  
 	</section>
 
-	<Saos once={true} animation={"last-animation 4.5s cubic-bezier(.6,0,.2,1) both"}>
+	<Saos once={true} animation={"last-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	<section id="index-sixth" class="white">
 	  <div class="section-head">
-		<span class="h4" lang="en">06.</span>
-		<Hyphen />
-		<h1 class="h4" lang="en">contact</h1>
+		<div class="h4" lang="en">06.</div>
+		<h1 class="h3" lang="en">contact</h1>
 	  </div>
 	  <h2 class="p">蒸留・調香に関するご相談・ご質問は<br>
 		以下メールアドレスよりお問い合わせください。<br>
@@ -271,8 +264,10 @@ onMount(() => {
 
 #index-top {visibility: hidden;}
 @keyframes -global-zooming {
-	0% {transform: scale(1.2);opacity: 0;}
-  100% {transform: scale(1);opacity: 1;}
+	0% {opacity: 0;
+		transform: scale(1.2);opacity: 0;}
+  100% {opacity: 1;
+	  transform: scale(1);opacity: 1;}
 }
 
 @keyframes -global-scroll-animation {
@@ -311,9 +306,9 @@ onMount(() => {
 
 
 
-#index-first, #index-second {padding-top: 10rem;}
+#index-first, #index-second {padding-top: 15rem;}
 #index-third {padding-top: 12.5rem;}
-#index-fourth {padding-top: 8rem;}
+#index-fourth {padding-top: 12rem;}
 
 section {position: relative;}
 
@@ -329,75 +324,71 @@ section {position: relative;}
     padding-bottom: 0;
 	background-image: url('../image/sui_2023.jpg');
 	background-image: url(/image/keyvisual.jpg);
+	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
 
-#index-top .symbol {width: 17.5rem;}
 
-#index-first .wrapper p {margin-top: 1.5rem;}
+#index-first .section-head {margin-bottom: 3.5rem;}
+#index-first .wrapper p {margin: 1.2rem 0 5rem;}
 
+
+
+
+
+#index-second .section-head {margin-bottom: 6rem;}
 #index-second .bg {
 	width: 100vw;
-	margin-top: 4rem;
 	margin-left: calc(-1 * var(--padding));
-	padding: 12rem 0 11rem;
+	padding: 10rem 0 4.5rem;
 	padding-left: var(--padding);
 	background-image: url('../image/essence.jpg');
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
-#index-second .container {margin-bottom: 4.5rem;}
+#index-second .container {margin-bottom: 6rem;}
 #index-second .container:nth-of-type(3) {margin-bottom: 0;}
 #index-second .container h2 {
-	font-size: 1.7rem;
-	margin-left: -0.5px;
+	font-size: 1.6rem;
+	margin-left: -0.3px;
 }
 #index-second .container h3 {
-	opacity: .5;
-	margin-top: -.25rem;
-	margin-bottom: 1.0rem;
+	margin: .25rem 0 1.5rem;
+	margin-left: .2px;
+	opacity: .9;
 }
 #index-second .container p {
 	line-height: 2;
 	margin-left: -.5px;
 	opacity: .9;
+	letter-spacing: .45em;
 }
 
 
 
-#index-third .section-head, #index-fourth .section-head {margin-bottom: 1.5rem;}
+#index-third .section-head, #index-fourth .section-head {margin-bottom: 2.8rem;}
 
 #index-third .exhibitions {
-	width: calc(100vw - var(--padding));
-	width: 100%;
-	margin-top: 3rem;
+	width: 100vw;
+    margin-left: calc(-1 * var(--padding));
+	margin-top: 6rem;
 }
 
 
 
 #index-fourth p {font-size: 1.1rem;}
 #index-fourth .exhibitions {
-	margin-top: 3rem;
+	margin-top: 6rem;
 	width: 100vw;
     margin-left: calc(-1 * var(--padding));
 }
 
 
 
-#index-fifth {margin: 10rem 0 0;}
-#index-fifth .imgWrapper {
-	width: calc(100vw - var(--padding) + 1px);
-    height: 60vw;
-	overflow: hidden;
-}
-#index-fifth img {
-	width: calc(100vw - var(--padding) + 1px);
-    height: 60vw;
-    margin-left: -1px;
-}
+#index-fifth {margin: 15rem 0 0;}
 #index-fifth .logo {
-	width: 16.5rem;
-	margin: 3.5rem 0 1.0rem;
+	width: 12.5rem;
+	margin: 5rem 0 1.0rem;
 }
 #index-fifth .paragraph p {
 	line-height: 2.8;

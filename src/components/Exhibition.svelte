@@ -1,12 +1,23 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/svelte';
-import { EffectFade } from 'swiper';
+import { EffectFade,Scrollbar } from 'swiper';
 import { Autoplay } from 'swiper/core';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
+import 'swiper/css/scrollbar';
 import Saos from 'saos';
 
-  const items = [
+const items = [
+  {
+    title: "sona",
+    info: "Autumn 2022 at Kumu Tokyo",
+    img: "../image/exhibition_1.jpg"
+  },
+  {
+    title: "CHIQ - Wine × Fragrance",
+    info: "Summer 2022 at OFS gallery",
+    img: "../image/exhibition_2.jpeg"
+  },
   {
     title: "sona",
     info: "Autumn 2022 at Kumu Tokyo",
@@ -17,22 +28,22 @@ import Saos from 'saos';
     info: "Summer 2022 at OFS gallery",
     img: "../image/exhibition_2.jpeg"
   }
-  ];
+
+];
 
 
 </script>
 
 
-
-<Swiper
-    loop={true}
-    autoplay={{
-        delay: 5000,
-        disableOnInteraction: true
-    }}
-    speed={5000}
-    modules="{[EffectFade, Autoplay]}" effect="fade"
+  <Swiper
+      modules={[Scrollbar]}
+      speed={1000}
+      slidesPerView={"auto"}
+      spaceBetween={30}
+      scrollbar={{ draggable: true }}
+      class="mySwiper wrapper"
   >
+
   {#each items as item, i}
     <SwiperSlide>
         <div class="swiper-slide">
@@ -58,14 +69,13 @@ import Saos from 'saos';
   100% {transform: scale(1);}
 }
 .swiper-slide {
-  width: 100%;
-  height: 80vw;
+  width: 45vw;
+  height: 50vw;
   overflow: hidden;
 }
 .swiper-slide img {
-    width: 100vw;
-    width: 100%;
-    height: 80vw;
+  width: 45vw;
+  height: 50vw;
 }
 .exhibitions .swiper-slide .info h3 {margin: .5rem 0 .25rem; opacity: .75;}
 .exhibitions .swiper-slide .info h4 {opacity: .25;}

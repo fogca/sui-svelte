@@ -1,15 +1,19 @@
 @charset "UTF-8";
 
-/*
-@font-face {  
-    font-family: 'TWKL';
-    src: url('../font/TWKLausanne-300.woff2') format('woff2');    
+@font-face {
+    font-family: 'VNTN';
+    src: url(/font/Venetian301BT-Regular.woff2) format('woff2');    
 }
-*/
+@font-face {
+    font-family: 'VNTND';
+    src: url(font/Venetian301DmBT-Regular.woff2) format('woff2');    
+}
 
 :root {
-    --backgroundColor: #EDEDEC;
+    --backgroundColor: #FCFDFD;
+
     --textColor: #404020;
+    --textColor: #0E2F2F;
     --padding: 10.125vw;
 }
 
@@ -29,13 +33,15 @@ html, body {
 
 /*GillSansMTPro-LightItalic / */
 div, h1, h2, h3, h4, h5, h6, p, a, span, button {
-    font-family: goudy-old-style, TsukuAOldMinPr6N-R, FOT-TsukuMinPro, 'Shippori Mincho',
+    font-family: goudy-old-style, TsukuAOldMinPr6N-R, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho',
+    '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
+    font-family: "VNTN", TsukuAOldMinPr6N-R, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho',
     '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
     font-weight: 400;
     color: var(--textColor);
     font-display: swap;
     font-feature-settings: "palt";
-    letter-spacing: .5em;
+    letter-spacing: .75em;
     -webkit-font-smoothing: antialiased;
     line-height: 2.1;
 }
@@ -57,7 +63,7 @@ h6, .h6 {font-size: 1.2rem;}
 
 
 p, .p {
-    line-height: 2.4;
+    line-height: 2.5;
     font-size: 1.35rem;
     letter-spacing: 0.25em;
     text-align: left;

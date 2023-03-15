@@ -1,21 +1,30 @@
 <script>
-	import { Swiper, SwiperSlide } from 'swiper/svelte';
-  import { EffectFade } from 'swiper';
-  import { Autoplay } from 'swiper/core';  
-  import 'swiper/css/effect-fade';
-	import 'swiper/css';
-  import Saos from 'saos';
+import { Swiper, SwiperSlide } from 'swiper/svelte';
+import { EffectFade, Pagination } from 'swiper';
+import { Autoplay } from 'swiper/core';  
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+import 'swiper/css';
+import Saos from 'saos';
 
-    const items = [
-    {
-      title: "香水びん",
-      img: "../image/exhibition_1.jpg"
-    },
-    {
-      title: "kousui binn",
-      img: "../image/exhibition_2.jpeg"
-    },
-    ];
+const items = [
+  {
+    title: "香水びん",
+    img: "../image/exhibition_1.jpg"
+  },
+  {
+    title: "kousui binn",
+    img: "../image/exhibition_2.jpeg"
+  },
+  {
+    title: "kousui binn",
+    img: "../image/about.jpg"
+  },
+  {
+    title: "kousui binn",
+    img: "../image/essence.jpg"
+  },
+];
 </script>
 
 
@@ -26,8 +35,9 @@
         delay: 5000,
         disableOnInteraction: true
     }}
+    pagination={{ clickable: true }}
     speed={5000}
-    modules="{[EffectFade, Autoplay]}" effect="fade"
+    modules="{[EffectFade, Autoplay, Pagination]}" effect="fade"
   >
   {#each items as item, i}
     <SwiperSlide>

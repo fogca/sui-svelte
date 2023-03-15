@@ -91,16 +91,11 @@
 
 header {
     opacity: 0;
-    width: var(--padding);
-    height: 100vh;
-    position: fixed;
-    left: auto;
-    right: 0;
+    width: 100vw;
+    height: 5rem;
+    position: absolute;
+    left: 0;
     top: 0;
-    background-image: url(/image/bg.webp);
-    background-color:rgba(250,250,250,0.7);
-    background-blend-mode:lighten;
-    filter: brightness(.98);
     z-index: 9;
     padding: 3rem 0 4rem;
     transition: .5s ease;

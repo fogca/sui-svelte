@@ -86,7 +86,7 @@ onMount(() => {
 #nt {
 	width: 100vw;
 	padding: 4rem var(--padding) 8rem;
-	background-image: url(/image/exhibition_1.jpg);
+	background-image: url(/image/kv.webp);
 	background-size: cover;
 }
 #nt .logo {width: 13rem;}
