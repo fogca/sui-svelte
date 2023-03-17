@@ -14,14 +14,13 @@
 .index-header {
     position: fixed;
     top: 10rem;
-    left: 7.5vw;
+    left: 6vw;
     z-index: 10;
 
 }
 
-.index-header ul li {
-    margin-bottom: 2.5rem;
-}
+.index-header ul li {margin-bottom: 3.5rem;}
+.index-header ul li a div {margin-bottom: .5rem;}
 
 
 

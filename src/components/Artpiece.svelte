@@ -84,7 +84,8 @@ const items = [
 @media screen and (min-width: 720px) {
 
 
-  .swiper-slide img {height: 60vh;}
+  .swiper-slide img {height: 35vh;}
+  .swiper-slide {height: 35vh;}
 
 
 }

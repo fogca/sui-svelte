@@ -101,27 +101,27 @@ onMount(() => {
 	<nav class="index-header pc">
 		<ul>
 			<li><a href="/#index-first">
-				<div class="h5" lang="en">01.</div>
+				<div class="h6" lang="en">01.</div>
 				<h1 class="h4" lang="en">fragrance</h1>
 			</a></li>
 			<li><a href="/#index-second">
-				<div class="h5" lang="en">02.</div>
+				<div class="h6" lang="en">02.</div>
 				<h1 class="h4" lang="en">essence</h1>
 			</a></li>
 			<li><a href="/#index-third">
-				<div class="h5" lang="en">03.</div>
+				<div class="h6" lang="en">03.</div>
 				<h1 class="h4" lang="en">experience</h1>
 			</a></li>
 			<li><a href="/#index-fourth">
-				<div class="h5" lang="en">04.</div>
+				<div class="h6" lang="en">04.</div>
 				<h1 class="h4" lang="en">artpiece</h1>
 			</a></li>
 			<li><a href="/#index-fifth">
-				<div class="h5" lang="en">05.</div>
+				<div class="h6" lang="en">05.</div>
 				<h1 class="h4" lang="en">about</h1>
 			</a></li>
 			<li><a href="/#index-sixth">
-				<div class="h5" lang="en">06.</div>
+				<div class="h6" lang="en">06.</div>
 				<h1 class="h4" lang="en">contact</h1>
 			</a></li>
 		</ul>
@@ -483,8 +483,18 @@ section {position: relative;}
 
 
 	#index-first, #index-second {padding-top: 22.5rem;}
-	#index-third {padding-top: 22.5rem;}
-	#index-fourth {padding-top: 25rem;}
+	#index-third {padding-top: 20rem;}
+	#index-fourth {padding-top: 18rem;}
+	#index-fifth {margin-top: 20rem;}
+
+
+
+	#index-second .bg {
+		padding: 16rem 0 10rem;
+    	padding-left: var(--pcSectionPadding);
+    	margin-left: calc(-1 * var(--pcSectionPadding));
+	}
+
 
 	#index-fourth .exhibitions {
     	width: 35vw;

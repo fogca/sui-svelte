@@ -97,8 +97,8 @@ main {
     margin: auto;
   }
 
-.sp {display: none;}
-.pc {display: block;}
+.pc {display: none;}
+.sp {display: block;}
 
 section {padding: 0 var(--padding);}
 
