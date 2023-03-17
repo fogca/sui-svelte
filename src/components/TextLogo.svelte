@@ -15,6 +15,9 @@
 <style>
 
     svg {width: 100%;}
+    svg * {
+        fill: var(--textColor);
+    }
 
 </style>
   

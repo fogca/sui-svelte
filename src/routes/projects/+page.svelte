@@ -30,10 +30,13 @@ onMount(() => {
 	<title>かほりのプロジェクト | atelier sui - 蕊 | 心を澄まして聞くかほり</title>
 </svelte:head>
 
+
+<a href="/" class="logo" data-sveltekit-reload><TextLogo /></a>
+
 <main class="page">
 	<div class="bg-washi"></div>
 	<section id="pt">
-		<a href="/" class="logo" data-sveltekit-reload><TextLogo /></a>
+		
 		<div class="wrapper">
 			<h1 class="h4">かほりのプロジェクト</h1>
 			<p>蒸留家・調香師として参画した<br>プロジェクトになります。</p>
@@ -87,20 +90,20 @@ onMount(() => {
 	}
 }
 
-#pt {
-	height: calc(100vh - (100vw - var(--padding) + var(--padding)));
-	height: calc(100dvh - (100vw - var(--padding) + var(--padding)));
-	padding-top: 4rem;
-	position: relative;
-}
-#pt .logo {width: 13rem;}
-#pt .wrapper {
+.logo {
+	width: 10rem;
 	position: absolute;
-	top: auto;
-	bottom: 6rem;
+	top: 4rem;
+	left: var(--padding);
 }
+
+
+#pt {
+	padding-top: 12.5rem;
+	padding-bottom: 5rem;
+}
+
 #pt .wrapper p {
-	opacity: .75;
     margin-top: 0.5rem;
 	font-size: 1.3rem;
     line-height: 2.3;
@@ -112,6 +115,10 @@ onMount(() => {
 #pi .wrapper .container:nth-of-type(1) .image {
 	width: calc(100vw - var(--padding) + 1px);
 	height: calc(100vw - var(--padding));
+	
+	height: calc(100vh - 12.5rem - 5.5rem - (16px * 2.1) - (13px*2.3*2));
+	height: calc(100dvh - (12.5rem + 5.5rem + (16px * 2.1) + (13px*2.3*2)));
+	
 	margin-bottom: 3rem;
 	margin-left: -1px;
 	overflow: hidden;

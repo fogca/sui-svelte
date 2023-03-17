@@ -46,7 +46,7 @@
 	
 </script>
 
-<header>
+<header style="display:none;">
     <div class="pattern">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.999" height="740" viewBox="0 0 49.999 740">
             <defs>
@@ -104,7 +104,6 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
