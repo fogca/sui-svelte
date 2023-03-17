@@ -49,9 +49,17 @@ onMount(() => {
 		  <div class="container">
 			<div class="image"><img src="../image/projects_senn.jpeg" alt=""></div>
 			<h2 class="h2" lang="en">senn - skin care brand</h2>
-			<h3 class="h7">スキンケアプロダクト、インセンスの香り</h3>
+			<h3 class="h7">スキンケアプロダクト・インセンス</h3>
 			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。また本文章の文字量が足りない場合は適宜適切な分量をコピーアンドペーストし、ご活用ください。</p>
-			<a href="https://shop.sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
+			<a href="https://shop.sen-n.com/" class="h6" target="_blank" rel="noreferrer">公式サイト</a>
+		  </div>
+
+		  <div class="container">
+			<img src="../image/projects_sophistance.jpeg" alt="">
+			<h2 class="h2" lang="en">sophistance</h2>
+			<h3 class="h7">ルームフレグランス</h3>
+			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。</p>
+			<a href="https://sen-n.com/" class="h6" target="_blank" rel="noreferrer">公式サイト</a>
 		  </div>
 
 		  <div class="container">
@@ -59,15 +67,7 @@ onMount(() => {
 			<h2 class="h2" lang="en">senn - skin care brand</h2>
 			<h3 class="h7">スキンケアプロダクト、インセンスの香り</h3>
 			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。</p>
-			<a href="https://sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
-		  </div>
-
-		  <div class="container">
-			<img src="../image/projects_senn.jpeg" alt="">
-			<h2 class="h2" lang="en">senn - skin care brand</h2>
-			<h3 class="h7">スキンケアプロダクト、インセンスの香り</h3>
-			<p>本文はデザインや全体のボリューム感を確認するためのダミーテキストです。校正が終了した際は、文章をこちらから置き換えてください。</p>
-			<a href="https://sen-n.com/" class="h6" style="text-decoration: underline;">公式サイト</a>
+			<a href="https://sen-n.com/" class="h6" target="_blank" rel="noreferrer">公式サイト</a>
 		  </div>
 		  
 	  </div>
@@ -114,7 +114,11 @@ onMount(() => {
 
 #pi {position: relative;}
 
-#pi .wrapper .container img {width: 100%;}
+#pi .wrapper .container img {
+    width: 100%;
+    height: 50vw;
+    object-position: center 65%;
+}
 #pi .wrapper .container:nth-of-type(1) .image {
 	width: calc(100vw - var(--padding) + 1px);
 	height: calc(100vw - var(--padding));
@@ -133,12 +137,26 @@ onMount(() => {
 	transition: 1s ease-in-out;
 }
 
-#pi .wrapper .container {margin-bottom: 8rem;}
+#pi .wrapper .container {margin-bottom: 10rem;}
 #pi .wrapper .container a {
+	position: relative;
 	font-feature-settings: normal;
 	letter-spacing: .3em;
+	text-decoration: none;
 }
+#pi .wrapper .container a::after {
+	content: "";
+	position: absolute;
+	top: auto;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+	height: .5px;
+	background-color: var(--textColor);
+}
+
 #pi .wrapper .container h2 {
+	font-size: 2.2rem;
 	margin: 1.5rem 0 .5rem;
 	margin-left: -.9px;
 }
@@ -147,7 +165,7 @@ onMount(() => {
 	width: 97.5%;
 	font-size: 1.25rem;
 	opacity: 1;
-	margin: 2rem 0 3.5rem;
+	margin: 2rem 0 3.2rem;
 }
 
 

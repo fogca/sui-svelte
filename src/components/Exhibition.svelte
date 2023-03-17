@@ -8,36 +8,37 @@ import 'swiper/css/scrollbar';
 import Saos from 'saos';
 
 const items = [
+  
+  { 
+    title: "春愁 shun shu",
+    info: "yoshida-tei / 2023",
+    img: "../image/exhibition_.jpg"
+  },
   {
-    title: "sona",
-    info: "Autumn 2022 at Kumu Tokyo",
-    img: "../image/exhibition_1.jpg"
+    title: "脈々 myaku myaku",
+    info: "wise wise tools / 2023",
+    img: "../image/exhibition_0.jpg"
+  },
+  {
+    title: "Sona",
+    info: "Kumu Tokyo / 2022",
+    img: "../image/exhibition_sona.jpg"
+  },
+  {
+    title: "水辺をつつむ",
+    info: "atelier fluss / 2022",
+    img: "../image/exhibition_3.jpg"
+  },
+  {
+    title: "風をきく",
+    info: "atelier sui / 2022",
+    img: "../image/exhibition_4.png"
   },
   {
     title: "CHIQ - Wine × Fragrance",
-    info: "Summer 2022 at OFS gallery",
+    info: "OFS gallery / 2022",
     img: "../image/exhibition_2.jpeg"
-  },
-  {
-    title: "sona",
-    info: "Autumn 2022 at Kumu Tokyo",
-    img: "../image/exhibition_1.jpg"
-  },
-  {
-    title: "CHIQ - Wine × Fragrance",
-    info: "Summer 2022 at OFS gallery",
-    img: "../image/exhibition_2.jpeg"
-  },
-  {
-    title: "CHIQ - Wine × Fragrance",
-    info: "Summer 2022 at OFS gallery",
-    img: "../image/exhibition_2.jpeg"
-  },
-  {
-    title: "sona",
-    info: "Autumn 2022 at Kumu Tokyo",
-    img: "../image/exhibition_1.jpg"
-  },
+  }
 
 ];
 
@@ -87,7 +88,7 @@ const items = [
   width: 45vw;
   height: 50vw;
 }
-.exhibitions .swiper-slide .info h3 {margin: .5rem 0 .25rem; opacity: .75;}
+.exhibitions .swiper-slide .info h3 {margin: 1.2rem 0 .25rem; opacity: .75;}
 .exhibitions .swiper-slide .info h4 {opacity: .25;}
 
 

@@ -42,7 +42,7 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     color: var(--textColor);
     font-display: swap;
     font-feature-settings: "palt";
-    letter-spacing: .75em;
+    letter-spacing: .675em;
     -webkit-font-smoothing: antialiased;
     line-height: 2.1;
 }
