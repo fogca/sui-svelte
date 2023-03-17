@@ -116,8 +116,8 @@ onMount(() => {
 	width: calc(100vw - var(--padding) + 1px);
 	height: calc(100vw - var(--padding));
 	
-	height: calc(100vh - 12.5rem - 5.5rem - (16px * 2.1) - (13px*2.3*2));
-	height: calc(100dvh - (12.5rem + 5.5rem + (16px * 2.1) + (13px*2.3*2)));
+	height: calc(100vh - 125px - 55px - (16px * 2.1) - (13px*2.3*2));
+	height: calc(100dvh - (125px + 55px + (16px * 2.1) + (13px*2.3*2)));
 	
 	margin-bottom: 3rem;
 	margin-left: -1px;

@@ -11,26 +11,23 @@
 	}
 }
 
-/*
-#index-first *,
-#index-second *,
-#index-third *,
-#index-fourth * {
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateY(10px);
-    transition: 2.8s cubic-bezier(.4,.1,.1,1);
-    will-change: transform, opacity, filter;
+.index-header {
+    position: fixed;
+    top: 10rem;
+    left: 7.5vw;
+    z-index: 10;
+
 }
-#index-first.visible *,
-#index-second.visible *,
-#index-third.visible *,
-#index-fourth.visible * {
-    filter: blur(0);
-    transform: translateY(0);
-    opacity: 1;
+
+.index-header ul li {
+    margin-bottom: 2.5rem;
 }
-*/
+
+
+
+
+
+
 .l-line {
     width: 100vw;
     height: .05px;
